@@ -1,22 +1,22 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'poppins', sans-serif;
-    font-size: 18px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
 }
 
 body {
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-  margin-left: 350px;
+  margin: 0 auto;
 }
 
 .header {
   height: 80px;
-  width: 70%;
+  width: 90%; /* Adjusted for smaller screens */
   background-color: goldenrod;
   border-radius: 3px;
   margin: 30px 0;
@@ -25,13 +25,12 @@ body {
   justify-content: space-between;
   padding: 15px;
   box-shadow: 4px 4px 16px rgb(175, 175, 112);
-
 }
 
 .header .logo {
-      font-size: 30px;
-      font-weight: bold;
-      color: white;
+  font-size: 24px; /* Slightly smaller for responsiveness */
+  font-weight: bold;
+  color: white;
 }
 
 .cart {
@@ -41,14 +40,14 @@ body {
   align-items: center;
   padding: 7px 10px;
   border-radius: 3px;
-  width: 80px;
+  width: 70px;
 }
 
 .fa-solid {
   color: goldenrod;
 }
 
-.cart p{
+.cart p {
   height: 22px;
   width: 22px;
   display: flex;
@@ -58,18 +57,21 @@ body {
   background-color: goldenrod;
   color: white;
 }
+
 .container {
   display: flex;
-  width: 70%;
+  flex-wrap: wrap;
+  width: 90%; /* Adjusted for smaller screens */
   margin-bottom: 30px;
+  padding: 5px;
   border-radius: 10px;
   box-shadow: 4px 4px 16px rgb(175, 175, 112);
 }
 
 #root {
-  width: 60%;
+  width: 100%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Flexible grid */
   grid-gap: 20px;
 }
 
@@ -85,16 +87,16 @@ body {
 }
 
 .sidebar {
-  width: 50%;
+  width: 100%; /* Full width on smaller screens */
   border-radius: 5px;
   background-color: #f7f5f5;
-  margin-left: 20px;
+  margin: 20px 0;
   padding: 15px;
   align-items: center;
 }
 
 .foot {
-  border-top:1px solid  #333;
+  border-top: 1px solid #333;
   padding: 10px 0;
   display: flex;
   margin: 20px 0;
@@ -109,17 +111,14 @@ body {
   border: 1px solid goldenrod;
   border-radius: 5px;
   padding: 15px;
-
 }
 
 .img-box {
-
-    width: 100%;
-    height: 180px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
+  width: 100%;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .images {
@@ -155,6 +154,7 @@ button {
   cursor: pointer;
   color: white;
 }
+
 button:hover {
   background-color: #333;
 }
@@ -168,31 +168,29 @@ button:hover {
   border: 1px solid #aaa;
   border-radius: 3px;
   margin: 10px 10px;
-
 }
 
 .row-img {
   width: 50px;
   height: 50px;
   display: flex;
-  border-radius: 50%; /* Ensures a circular outer container */
+  border-radius: 50%;
   border: 1px solid goldenrod;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Clips any overflowing content */
+  overflow: hidden;
 }
 
 .rowimg {
-  width: 90%; /* Ensures the image fills the container */
-  height: 90%; /* Ensures the image fills the container */
-  border-radius: 50%; /* Makes the image circular */
-  object-fit: fill; /* Ensures the image covers the container */
+  width: 90%;
+  height: 90%;
+  border-radius: 50%;
+  object-fit: fill;
 }
-
 
 .fa-trash:hover {
   cursor: pointer;
-  color:#333;
+  color: #333;
 }
 
 .logo {
@@ -200,10 +198,72 @@ button:hover {
   width: 70px;
   border-radius: 5px;
 }
+
 .shop-text {
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 10px;
   color: goldenrod;
   text-shadow: 4px 4px 16px rgb(175, 175, 112);
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  body {
+    margin-left: 0;
+  }
+
+  /* .header {
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    text-align: center;
+  } */
+  .header {
+    height: 80px;
+    width: 90%; /* Adjusted for smaller screens */
+    background-color: goldenrod;
+    border-radius: 3px;
+    margin: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    box-shadow: 4px 4px 16px rgb(175, 175, 112);
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .header .logo {
+    font-size: 20px;
+  }
+
+  .cart {
+    width: 60px;
+  }
+
+  .cart-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  button {
+    font-size: 14px;
+  }
+  .shop-text {
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: goldenrod;
+    text-shadow: 4px 4px 16px rgb(175, 175, 112);
+  }
 }

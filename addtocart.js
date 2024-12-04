@@ -54,6 +54,34 @@ const product = [
       title: 'Men Fresh Deodrant Nivea 150ml',
       price: 1850,
       
+    },
+    {
+      id: 9,
+      image: 'images/9.png',
+      title: 'Miss Rose Advance Version Color Lipstick',
+      price: 2750,
+      
+    },
+    {
+      id: 10,
+      image: 'images/10.png',
+      title: 'Women Gold & Pearl Jewellery set',
+      price: 35500,
+      
+    },
+    {
+      id: 11,
+      image: 'images/11.png',
+      title: 'Men Black & Green Sun Glasses',
+      price: 2350,
+      
+    },
+    {
+      id: 12,
+      image: 'images/12.png',
+      title: 'I Phone I-12 Max Dark Gray ',
+      price: 255500,
+      
     }
   ];
 
