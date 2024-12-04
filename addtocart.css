@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    font-size: 18px;
+}
+
+body {
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 350px;
+}
+
+.header {
+  height: 80px;
+  width: 70%;
+  background-color: goldenrod;
+  border-radius: 3px;
+  margin: 30px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  box-shadow: 4px 4px 16px rgb(175, 175, 112);
+
+}
+
+.header .logo {
+      font-size: 30px;
+      font-weight: bold;
+      color: white;
+}
+
+.cart {
+  display: flex;
+  background-color: white;
+  justify-content: space-between;
+  align-items: center;
+  padding: 7px 10px;
+  border-radius: 3px;
+  width: 80px;
+}
+
+.fa-solid {
+  color: goldenrod;
+}
+
+.cart p{
+  height: 22px;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 22px;
+  background-color: goldenrod;
+  color: white;
+}
+.container {
+  display: flex;
+  width: 70%;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 16px rgb(175, 175, 112);
+}
+
+#root {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.head {
+  background-color: goldenrod;
+  border-radius: 3px;
+  height: 40px;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar {
+  width: 50%;
+  border-radius: 5px;
+  background-color: #f7f5f5;
+  margin-left: 20px;
+  padding: 15px;
+  align-items: center;
+}
+
+.foot {
+  border-top:1px solid  #333;
+  padding: 10px 0;
+  display: flex;
+  margin: 20px 0;
+  justify-content: space-between;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  border: 1px solid goldenrod;
+  border-radius: 5px;
+  padding: 15px;
+
+}
+
+.img-box {
+
+    width: 100%;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.images {
+  max-width: 90%;
+  max-height: 90%;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.bottom {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 110px;
+}
+
+h2 {
+  font-size: 20px;
+  color: red;
+}
+
+button {
+  width: 100%;
+  position: relative;
+  border: none;
+  border-radius: 5px;
+  background-color: goldenrod;
+  padding: 7px 25px;
+  cursor: pointer;
+  color: white;
+}
+button:hover {
+  background-color: #333;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background: white;
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  margin: 10px 10px;
+
+}
+
+.row-img {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  border-radius: 50%; /* Ensures a circular outer container */
+  border: 1px solid goldenrod;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Clips any overflowing content */
+}
+
+.rowimg {
+  width: 90%; /* Ensures the image fills the container */
+  height: 90%; /* Ensures the image fills the container */
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: fill; /* Ensures the image covers the container */
+}
+
+
+.fa-trash:hover {
+  cursor: pointer;
+  color:#333;
+}
+
+.logo {
+  height: 60px;
+  width: 70px;
+  border-radius: 5px;
+}
+.shop-text {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: goldenrod;
+  text-shadow: 4px 4px 16px rgb(175, 175, 112);
+}
