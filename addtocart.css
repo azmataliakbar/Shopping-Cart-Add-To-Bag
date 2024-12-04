@@ -198,13 +198,18 @@ button:hover {
   width: 70px;
   border-radius: 5px;
 }
-
 .shop-text {
-  font-size: 30px;
-  font-weight: bold;
+  font-size: 50px;
+  font-weight: 600;
   margin-bottom: 10px;
   color: goldenrod;
   text-shadow: 4px 4px 16px rgb(175, 175, 112);
+}
+
+
+.author {
+  color: rgb(228, 226, 226);
+  text-align: center; /* Centers text inside the .author */
 }
 
 /* Media Queries for Responsiveness */
